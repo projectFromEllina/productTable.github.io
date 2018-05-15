@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="listApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Flowers</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div ng-controller="listCtrl" class="panel">
+		 <div class="title">
+		 	<p>Flowers <span class="quantity">{{items.length}}</span></p>
+
+			<img src="rose.png" alt="rose">
+		 </div>
+
+		 <ng-include src="url"></ng-include>
+	</div>
+</body>
+</html>
